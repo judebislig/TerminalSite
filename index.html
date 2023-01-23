@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="src/style.css">
+        <title>Jude's terminal</title>
+
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="terminal">
+            <div class="row terminal-bar">
+                <div class="close"></div>
+                <div class="min"></div>
+                <div class="max"></div>
+                <span class="terminal-bar-text">Jude's Terminal</span>
+            </div>
+
+            <div class="terminal-content" id="terminal_content">
+                <div class="column output" id="terminal_outputs">
+                    <span>Welcome to the terminal</span>
+                    <span>Type <span class="command-keyword">"help"</span> to see supporting commands</span>
+                </div>
+                <div class="row">
+                    <span>→</span>
+                    <input 
+                        onblur="this.focus()"
+                        autofocus
+                        class="user_input"
+                        id="user_input" 
+                        type="text">
+                </div>
+            </div>
+        </div>
+
+        <script src="src/script.js"></script>
+    </body>
+</html>
